@@ -16,7 +16,7 @@
 		<!-- ./ Facebook Login button -->
 		<form method="post" action="" class="form-horizontal" autocomplete="off">
 			<!-- CSRF Token -->
-			<input type="hidden" name="csrf_token" id="csrf_token" value="{{ csrf_token() }}" />
+			<input type="hidden" name="_token" id="_token" value="{{ csrf_token() }}" />
 
 			<!-- First Name -->
 			<div class="control-group {{ $errors->has('first_name') ? 'error' : '' }}">

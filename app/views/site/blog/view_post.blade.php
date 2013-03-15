@@ -75,7 +75,7 @@ Click <a href="{{ URL::to('account/login') }}">here</a> to login into your accou
 @else
 <h4>Add a Comment</h4>
 <form method="post" action="{{ URL::to($post->slug) }}">
-	<input type="hidden" name="csrf_token" value="{{ Session::getToken() }}" />
+	<input type="hidden" name="_token" value="{{ Session::getToken() }}" />
 
 	<textarea class="input-block-level" rows="4" name="comment" id="comment">{{ Request::old('comment') }}</textarea>
 
