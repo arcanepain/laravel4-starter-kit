@@ -108,7 +108,7 @@ Route::post('{postSlug}', 'BlogController@postView');
 
 Route::get('/', 'BlogController@getIndex');
 
-# routes for handling social authentication via opauth 
+# routes for handling social authentication via opauth
 Route::get('social/auth/{network?}', 'SocialController@auth');
 Route::get('social/callback', 'SocialController@callback');
 
