@@ -269,7 +269,7 @@ class AuthController extends BaseController {
 			$user = Sentry::getUserProvider()->findById($userId);
 
 			//
-			if( ! $user->checkResetPassword($resetCode))
+			if( ! $user->checkResetPasswordCode($resetCode))
 			{
 				//
 				return Redirect::to('account/forgot-password')->with('error', 'Reset password code is invalid.');
